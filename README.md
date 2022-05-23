@@ -69,6 +69,7 @@ DAGs can be run multiple times, and multiple DAG runs can happen in parallel. DA
 You can indicate dependencies for Tasks in the DAG using the characters >> and << :
 
 > first_task >> [second_task, third_task]
+
 > third_task << fourth_task
 
 By default, tasks have to wait for all upstream tasks to succeed before they can run, but you can customize how tasks are executed with features such as LatestOnly, Branching, and Trigger Rules.
