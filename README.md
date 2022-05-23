@@ -30,7 +30,6 @@ In addition to DAGs, Operators and Tasks, the Airflow offers the following compo
 - Hooks—Airflow uses Hooks to interface with third-party systems, enabling connection to external APIs and databases (e.g. Hive, S3, GCS, MySQL, Postgres). Hooks should not contain sensitive information such as authentication credentials.
 
 - Providers—packages containing the core Operators and Hooks for a particular service. They are maintained by the community and can be directly installed on an Airflow environment.
-Plugins—a variety of Hooks and Operators to help perform certain tasks, such as sending data from SalesForce to Amazon Redshift.
 
 - Connections—these contain information that enable a connection to an external system. This includes authentication credentials and API tokens. You can manage connections directly from the UI, and the sensitive data will be encrypted and stored in PostgreSQL or MySQL.
 
@@ -53,12 +52,6 @@ This UI makes Airflow superior to its competitors. e.g., In Apache Oozie, seeing
 
 #### Executor
 It is responsible for actually running a task. Executor controls on which worker to run a task, how many tasks to run in parallel, and update the status of the task as it progress.
-
-You can run your task on multiple workers managed by Celery or Dask or Kubernetes.
-
-The tasks are pulled from a queue, which can be either Redis or RabbitMQ.
-
-By default, Airflow uses SerialExecutor, which only runs one task at a time on a local machine. This is not advised to be done in production.
 
 #### Backend
 Airflow uses MySQL or PostgreSQL to store the configuration as well as the state of all the DAG and task runs. By default, Airflow uses SQLite as a backend by default, so no external setup is required. The SQLite backend is not recommended for production since data loss is probable.
