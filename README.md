@@ -69,6 +69,16 @@ By default, tasks have to wait for all upstream tasks to succeed before they can
 
 To manage complex DAGs, you can use SubDAGs to embed "reusable" DAGs into others. You can also visually group tasks in the UI using TaskGroups
 
+```sh
+ https://www.reply.com/data-reply/en/content/integrating-slack-alerts-in-airflow
+ ```
+ 
+ 
+```sh
+https://github.com/soumilshah1995/Learn-Apache-Airflow-in-easy-way-/blob/main/project/dags/first_dag.py
+```
+
+
 ![image alt text](https://assets-global.website-files.com/61e95e54543a7c0a5967ffd1/61fd443d0cc67c714baeae7a_61e95e54543a7cf4d46803a5_Airflow-diagram-3.png?raw=)
 
 
