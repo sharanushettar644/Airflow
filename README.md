@@ -41,7 +41,6 @@ Airflow primary consists of the following components -
 - Webserver
 - Executor
 - Backend
-- Scheduler
 
 It is responsible for scheduling your tasks according to the frequency mentioned. It looks for all the eligible DAGs and then puts them in the queue. If a DAG failed and retry is enabled, the scheduler will automatically put that DAG up for retry. The number of retries can be limited on a DAG level.
 
