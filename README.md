@@ -101,3 +101,9 @@ https://github.com/soumilshah1995/Learn-Apache-Airflow-in-easy-way-/blob/main/pr
 - We have integrate Airflow to slack. So that if any job failed we will get notification to slack. 
 
 ![image alt text](https://github.com/sharanushettar644/Airflow/blob/main/airflow.drawio.png?raw=)
+
+
+### Airflow Cost:
+```sh
+https://aws.amazon.com/managed-workflows-for-apache-airflow/pricing/
+```
