@@ -107,3 +107,9 @@ https://github.com/soumilshah1995/Learn-Apache-Airflow-in-easy-way-/blob/main/pr
 ```sh
 https://aws.amazon.com/managed-workflows-for-apache-airflow/pricing/
 ```
+
+
+### Airflow iam Policy
+```sh
+https://docs.aws.amazon.com/mwaa/latest/userguide/access-policies.html
+```
